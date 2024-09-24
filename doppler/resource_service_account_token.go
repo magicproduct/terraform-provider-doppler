@@ -12,6 +12,9 @@ func resourceServiceAccountToken() *schema.Resource {
 		CreateContext: resourceServiceAccountTokenCreate,
 		ReadContext:   resourceServiceAccountTokenRead,
 		DeleteContext: resourceServiceAccountTokenDelete,
+		Importer: &schema.ResourceImporter{
+			StateContext: schema.ImportStatePassthroughContext,
+		},
 		// ForceNew is specified for all user-specified fields
 		// Service account tokens cannot be moved, renamed, or edited to change their access
 		Schema: map[string]*schema.Schema{
