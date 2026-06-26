@@ -44,7 +44,7 @@ jobs:
 
       - name: Comment PR
         if: always() && github.event_name == 'pull_request'
-        uses: chainguard-actions/thollander-actions-comment-pull-request@eb8a41e8741fe7c8d37ca43747fcefdc3aada604 # v3.0.1
+        uses: step-security/actions-comment-pull-request@7f6021194300cf361f7ba99a346c4daa6cab809b # v3.0.1
         with:
           message: |
             ## :warning: Docs are not up to date!
