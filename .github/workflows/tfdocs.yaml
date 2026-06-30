@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: chainguard-actions/actions-checkout@84880c833d491e2b948e484ac6a8ce9da42795dc # v6
 
       - uses: actions/setup-go@v6
         with:
@@ -44,7 +44,7 @@ jobs:
 
       - name: Comment PR
         if: always() && github.event_name == 'pull_request'
-        uses: thollander/actions-comment-pull-request@v3.0.1
+        uses: step-security/actions-comment-pull-request@7f6021194300cf361f7ba99a346c4daa6cab809b # v3.0.1
         with:
           message: |
             ## :warning: Docs are not up to date!
