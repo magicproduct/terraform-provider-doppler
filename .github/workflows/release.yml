@@ -25,7 +25,7 @@ jobs:
       - name: Unshallow
         run: git fetch --prune --unshallow
       - name: Set up Go
-        uses: actions/setup-go@v6
+        uses: chainguard-actions/actions-setup-go@a5e8c9530cdd8d86c8c1e22fe4e2d0668896f7c7 # v6.5.0
         with:
           go-version: 1.25 # GO_VERSION_DEF
       - name: Import GPG key
