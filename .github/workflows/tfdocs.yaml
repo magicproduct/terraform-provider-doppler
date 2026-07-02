@@ -8,7 +8,7 @@ on:
 
 jobs:
   validate-tfdocs:
-    runs-on: ubuntu-latest
+    runs-on: gh-4cpu-runner-mles
 
     steps:
       - name: Checkout repository
