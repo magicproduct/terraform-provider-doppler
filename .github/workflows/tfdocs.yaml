@@ -14,7 +14,7 @@ jobs:
       - name: Checkout repository
         uses: chainguard-actions/actions-checkout@84880c833d491e2b948e484ac6a8ce9da42795dc # v6
 
-      - uses: actions/setup-go@v6
+      - uses: chainguard-actions/actions-setup-go@a5e8c9530cdd8d86c8c1e22fe4e2d0668896f7c7 # v6.5.0
         with:
           go-version: "^1.25.7" # GO_VERSION_DEF
       - run: go install github.com/hashicorp/terraform-plugin-docs/cmd/tfplugindocs@latest
